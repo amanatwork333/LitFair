@@ -20,15 +20,13 @@ export default function Avatar({ src, name }: AvatarProps) {
 
   return (
     <div className="relative">
-      {/* Animated gradient ring */}
-      <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-rose-400 via-violet-400 to-indigo-400 opacity-70 blur-sm animate-spin-slow" />
-      <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-rose-400 via-violet-400 to-indigo-400 opacity-50" />
+      <div className="absolute -inset-2 rounded-full border border-[#ffca7c]/30 opacity-70" />
+      <div className="absolute -inset-1 rounded-full bg-[#ffca7c]/10 blur-md animate-spin-slow" />
 
-      {/* Avatar */}
-      <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden border-4 border-white shadow-xl">
+      <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden border border-[#ffca7c]/80 shadow-[0_18px_40px_rgba(0,0,0,0.28)] ring-4 ring-[#ffca7c]/12">
         {imageError ? (
-          <div className="w-full h-full bg-gradient-to-br from-violet-400 to-pink-400 flex items-center justify-center">
-            <span className="text-3xl font-bold text-white">{initials}</span>
+          <div className="flex h-full w-full items-center justify-center bg-[#6c0908]">
+            <span className="text-3xl font-semibold tracking-[0.2em] text-[#ffca7c]">{initials}</span>
           </div>
         ) : (
           <Image

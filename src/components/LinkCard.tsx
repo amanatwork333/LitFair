@@ -8,23 +8,22 @@ interface LinkCardProps {
   index: number;
 }
 
-// Each card gets a unique gradient accent on hover
 const gradients = [
-  "hover:border-rose-300 hover:shadow-rose-100",
-  "hover:border-violet-300 hover:shadow-violet-100",
-  "hover:border-amber-300 hover:shadow-amber-100",
-  "hover:border-indigo-300 hover:shadow-indigo-100",
-  "hover:border-emerald-300 hover:shadow-emerald-100",
-  "hover:border-pink-300 hover:shadow-pink-100",
+  "hover:border-[#f5d9a8] hover:shadow-[0_16px_34px_rgba(0,0,0,0.18)]",
+  "hover:border-[#f5d9a8] hover:shadow-[0_16px_34px_rgba(0,0,0,0.18)]",
+  "hover:border-[#f5d9a8] hover:shadow-[0_16px_34px_rgba(0,0,0,0.18)]",
+  "hover:border-[#f5d9a8] hover:shadow-[0_16px_34px_rgba(0,0,0,0.18)]",
+  "hover:border-[#f5d9a8] hover:shadow-[0_16px_34px_rgba(0,0,0,0.18)]",
+  "hover:border-[#f5d9a8] hover:shadow-[0_16px_34px_rgba(0,0,0,0.18)]",
 ];
 
 const iconBgs = [
-  "bg-rose-100 group-hover:bg-rose-200",
-  "bg-violet-100 group-hover:bg-violet-200",
-  "bg-amber-100 group-hover:bg-amber-200",
-  "bg-indigo-100 group-hover:bg-indigo-200",
-  "bg-emerald-100 group-hover:bg-emerald-200",
-  "bg-pink-100 group-hover:bg-pink-200",
+  "bg-[#6c0908]/10 group-hover:bg-[#6c0908]/14",
+  "bg-[#6c0908]/10 group-hover:bg-[#6c0908]/14",
+  "bg-[#6c0908]/10 group-hover:bg-[#6c0908]/14",
+  "bg-[#6c0908]/10 group-hover:bg-[#6c0908]/14",
+  "bg-[#6c0908]/10 group-hover:bg-[#6c0908]/14",
+  "bg-[#6c0908]/10 group-hover:bg-[#6c0908]/14",
 ];
 
 export default function LinkCard({ link, index }: LinkCardProps) {
@@ -39,13 +38,13 @@ export default function LinkCard({ link, index }: LinkCardProps) {
       rel="noopener noreferrer"
       className={`
         group relative flex items-center gap-4 p-4 rounded-2xl
-        bg-white/80 backdrop-blur-sm
-        border border-gray-100
-        shadow-sm
+        bg-[#ffca7c] backdrop-blur-sm
+        border border-[#f5d9a8]
+        shadow-[0_12px_26px_rgba(0,0,0,0.14)]
         transition-all duration-300 ease-out
-        hover:scale-[1.025] hover:shadow-lg
+        hover:scale-105 hover:-translate-y-1 hover:shadow-[0_24px_48px_rgba(0,0,0,0.24)]
         ${gradient}
-        ${link.isHighlighted ? "ring-2 ring-violet-300 border-violet-200" : ""}
+        ${link.isHighlighted ? "ring-1 ring-[#f5d9a8]" : ""}
       `}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -61,11 +60,11 @@ export default function LinkCard({ link, index }: LinkCardProps) {
 
       {/* Text */}
       <div className="flex-1 min-w-0">
-        <h3 className="font-semibold text-gray-800 text-base leading-tight">
+        <h3 className="font-semibold text-[#6c0908] text-base leading-tight">
           {link.title.replace(/^\S+\s/, "")}
         </h3>
         {link.description && (
-          <p className="text-sm text-gray-400 mt-0.5 truncate">
+          <p className="text-sm text-[#6c0908] mt-0.5 truncate opacity-85">
             {link.description}
           </p>
         )}
@@ -74,9 +73,9 @@ export default function LinkCard({ link, index }: LinkCardProps) {
       {/* Animated arrow */}
       <span className={`
         shrink-0 w-8 h-8 rounded-full flex items-center justify-center
-        bg-gray-100 text-gray-400
+        bg-[#6c0908] text-[#ffca7c]
         transition-all duration-300
-        ${isHovered ? "bg-gray-800 text-white translate-x-1" : ""}
+        ${isHovered ? "translate-x-1 bg-[#3f0404]" : ""}
       `}>
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
           <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
@@ -85,7 +84,7 @@ export default function LinkCard({ link, index }: LinkCardProps) {
 
       {/* "New" badge */}
       {link.isHighlighted && (
-        <span className="absolute -top-2.5 -right-2 px-2.5 py-0.5 text-xs font-bold bg-gradient-to-r from-violet-500 to-pink-500 text-white rounded-full shadow-md">
+        <span className="absolute -top-2.5 -right-2 px-2.5 py-0.5 text-xs font-bold bg-[#6c0908] text-[#ffca7c] rounded-full shadow-[0_8px_18px_rgba(0,0,0,0.18)]">
           ✦ 
         </span>
       )}

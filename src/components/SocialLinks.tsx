@@ -16,8 +16,8 @@ const socialIcons: Record<string, React.ReactNode> = {
 };
 
 const socialHoverColors: Record<string, string> = {
-  instagram: "hover:bg-gradient-to-br hover:from-pink-500 hover:to-rose-500 hover:border-transparent hover:text-white hover:shadow-pink-200",
-  };
+  instagram: "hover:bg-[#6c0908] hover:border-transparent hover:text-[#ffca7c] hover:shadow-[0_10px_24px_rgba(0,0,0,0.16)]",
+};
 
 export default function SocialLinks({ links }: SocialLinksProps) {
   return (
@@ -30,11 +30,11 @@ export default function SocialLinks({ links }: SocialLinksProps) {
           rel="noopener noreferrer"
           className={`
             flex items-center justify-center w-11 h-11 rounded-full
-            bg-white border border-gray-200 shadow-sm
-            text-gray-500
+            bg-[#ffca7c] border border-[#f5d9a8] shadow-[0_8px_18px_rgba(0,0,0,0.14)]
+            text-[#6c0908]
             transition-all duration-300
-            hover:scale-110 hover:shadow-lg
-            ${socialHoverColors[link.icon] ?? "hover:bg-gray-800 hover:text-white hover:border-transparent"}
+            hover:scale-110 hover:-translate-y-1 hover:shadow-[0_16px_32px_rgba(0,0,0,0.2)]
+            ${socialHoverColors[link.icon] ?? "hover:bg-[#6c0908] hover:text-[#ffca7c] hover:border-transparent"}
           `}
           aria-label={link.platform}
         >

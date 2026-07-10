@@ -18,14 +18,13 @@ export default function Home() {
               <Avatar src={siteConfig.avatarUrl} name={siteConfig.name} />
             </div>
 
-            <h1 className="text-3xl sm:text-4xl font-bold mb-2 tracking-tight bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent">
+            <h1 className="text-3xl sm:text-4xl font-bold mb-2 tracking-tight text-[#ffca7c]">
               {siteConfig.name}
             </h1>
 
-            {/* Decorative gradient underline */}
-            <div className="mx-auto mb-4 h-1 w-16 rounded-full bg-gradient-to-r from-rose-400 via-violet-400 to-indigo-400" />
+            <div className="mx-auto mb-4 h-px w-20 rounded-full bg-[#ffca7c]/70" />
 
-            <p className="text-gray-500 text-base max-w-xs mx-auto leading-relaxed">
+            <p className="text-[#f5d9a8] text-base max-w-xs mx-auto leading-relaxed">
               {siteConfig.bio}
             </p>
           </section>
@@ -45,7 +44,7 @@ export default function Home() {
 
           {/* Social */}
           <section className="animate-fade-in-up" style={{ animationDelay: "600ms" }}>
-            <p className="text-center text-xs font-medium text-gray-400 uppercase tracking-widest mb-4">
+            <p className="text-center text-xs font-medium text-[#f5d9a8] uppercase tracking-widest mb-4">
               Find us on
             </p>
             <SocialLinks links={siteConfig.socialLinks} />
@@ -53,7 +52,7 @@ export default function Home() {
 
           {/* Footer */}
           <footer className="mt-12 text-center animate-fade-in-up" style={{ animationDelay: "700ms" }}>
-            <p className="text-gray-300 text-xs">
+            <p className="text-[#f5d9a8] text-xs">
               © {new Date().getFullYear()} {siteConfig.name}
             </p>
           </footer>
