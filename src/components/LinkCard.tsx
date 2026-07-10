@@ -86,7 +86,7 @@ export default function LinkCard({ link, index }: LinkCardProps) {
       {/* "New" badge */}
       {link.isHighlighted && (
         <span className="absolute -top-2.5 -right-2 px-2.5 py-0.5 text-xs font-bold bg-gradient-to-r from-violet-500 to-pink-500 text-white rounded-full shadow-md">
-          ✦ New
+          ✦ 
         </span>
       )}
     </a>

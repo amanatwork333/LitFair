@@ -39,7 +39,7 @@ export const siteConfig: SiteConfig = {
   name: "Lit Fair 2.0",
   
   // Short bio/tagline
-  bio: "Welcome! Click any link below to register or access resources.",
+  bio: "Welcome! Click Register now to get yourself registered for any event.",
   
   // Profile picture - replace with your image URL or use local /avatar.png
   avatarUrl: "https://api.dicebear.com/7.x/initials/svg?seed=LF&backgroundColor=6366f1",
@@ -56,29 +56,29 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "event-details",
-      title: "Rule Book 📄",
+      title: "RuleBook",
       url: "https://drive.google.com/drive/folders/16Rkn3Ra-cc8aidJIzvcJd9EJWg5wF7KY?usp=sharing",
       icon: "📄",
       description: "View complete event information",
     },
     {
       id: "schedule",
-      title: "📅 Brochure",
+      title: "Brochure",
       url: "https://drive.google.com/drive/folders/16Rkn3Ra-cc8aidJIzvcJd9EJWg5wF7KY?usp=sharing",
       icon: "📅",
-      description: "Check the event schedule",
+      description: "Event brief and schedule",
     },
     {
       id: "resources",
-      title: "📚 Resources",
+      title: "Posters",
       url: "https://drive.google.com/drive/folders/16Rkn3Ra-cc8aidJIzvcJd9EJWg5wF7KY?usp=sharing",
       icon: "📚",
-      description: "Access study materials and guides",
+      description: "download posters",
     },
     {
       id: "contact",
       title: "💬 Contact Us",
-      url: "https://docs.google.com/forms/d/e/1FAIpQLSfTAfoKgW8KoYhyPLigU4pU3PmLpwq9SK0nQKMM8ZlmeYRXHA/viewform?usp=dialog",
+      url: "https://wa.me/919964207000",
       icon: "💬",
       description: "Get in touch with our team",
     },
@@ -88,23 +88,8 @@ export const siteConfig: SiteConfig = {
   socialLinks: [
     {
       platform: "Instagram",
-      url: "https://instagram.com/yourhandle",
+      url: "https://www.instagram.com/c2s2_literayllis/",
       icon: "instagram",
-    },
-    {
-      platform: "Twitter",
-      url: "https://twitter.com/yourhandle",
-      icon: "twitter",
-    },
-    {
-      platform: "LinkedIn",
-      url: "https://linkedin.com/company/yourcompany",
-      icon: "linkedin",
-    },
-    {
-      platform: "Email",
-      url: "mailto:contact@yourdomain.com",
-      icon: "email",
     },
   ],
   
