@@ -57,7 +57,7 @@ export const siteConfig: SiteConfig = {
     {
       id: "event-details",
       title: "RuleBook",
-      url: "https://drive.google.com/file/d/1UhUJrJvcEZL8VA_gojCctetID02nwI-C/view?usp=sharing",
+      url: "https://drive.google.com/file/d/1UK9cbkfyOGYxW2LobDJa_5-4gOW_WDHL/view?usp=sharing",
       icon: "📕",
       description: "View complete event information",
     },
@@ -71,7 +71,7 @@ export const siteConfig: SiteConfig = {
     {
       id: "resources",
       title: "Posters",
-      url: "https://drive.google.com/file/d/1vUgGnfr3cHuW-s2lAEyFIfUOhR81qxUn/view?usp=sharing",
+      url: "https://drive.google.com/file/d/1d8oshJYRNz5K9TaJVb1J9Jr9AFbil0ip/view?usp=sharing",
       icon: "📚",
       description: "download posters",
     },
@@ -82,6 +82,20 @@ export const siteConfig: SiteConfig = {
       icon: "💬",
       description: "Get in touch with our team",
     },
+    // {
+    //   id: "faculty-coordinator",
+    //   title: "🎓 Aadarsh Kumar",
+    //   url: "https://wa.me/917050132006",
+    //   icon: "🎓",
+    //   description: "Faculty Coordinator",
+    // },
+    // {
+    //   id: "student-coordinator",
+    //   title: "🧑‍💼 Vasu",
+    //   url: "https://wa.me/919964207000",
+    //   icon: "🧑‍💼",
+    //   description: "Student Coordinator",
+    // },
   ],
   
   // Social media links

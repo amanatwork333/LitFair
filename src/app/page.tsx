@@ -29,6 +29,17 @@ export default function Home() {
             </p>
           </section>
 
+          {/* Notice */}
+          <section className="mb-8 animate-fade-in-up" style={{ animationDelay: "60ms" }}>
+            <div className="flex items-start gap-3 rounded-2xl border border-[#ffca7c]/40 bg-[#ffca7c]/10 backdrop-blur-sm px-4 py-3 shadow-[0_8px_20px_rgba(0,0,0,0.12)]">
+              <span className="text-lg leading-none mt-0.5">⚠️</span>
+              <p className="text-[#f5d9a8] text-xs sm:text-sm leading-relaxed">
+                Due to limited seats, participants will be shortlisted on a first come, first served basis.
+                Shortlisted participants will be notified via mail or WhatsApp.
+              </p>
+            </div>
+          </section>
+
           {/* Links */}
           <section className="space-y-3 mb-10">
             {siteConfig.links.map((link, index) => (
@@ -54,6 +65,12 @@ export default function Home() {
           <footer className="mt-12 text-center animate-fade-in-up" style={{ animationDelay: "700ms" }}>
             <p className="text-[#f5d9a8] text-xs">
               © {new Date().getFullYear()} {siteConfig.name}
+            </p>
+            <p className="text-[#f5d9a8] text-xs mt-1">
+              Aadarsh Kumar (Faculty Coordinator) | Vasu (Student Coordinator)
+            </p>
+            <p className="text-[#f5d9a8] text-xs mt-1">
+              +91 70501 32006       |    +91 99642 07000
             </p>
           </footer>
 
