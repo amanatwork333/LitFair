@@ -57,14 +57,14 @@ export const siteConfig: SiteConfig = {
     {
       id: "event-details",
       title: "RuleBook",
-      url: "https://drive.google.com/file/d/1UK9cbkfyOGYxW2LobDJa_5-4gOW_WDHL/view?usp=sharing",
+      url: "https://drive.google.com/file/d/1YJ42OFPnvPh54aZPyaDsUhjnwNJvsGeZ/view?usp=sharing",
       icon: "📕",
       description: "View complete event information",
     },
     {
       id: "schedule",
       title: "Brochure",
-      url: "https://drive.google.com/file/d/1DJnfvArpbC5iwfu98iLWeZ0msHK71cs4/view?usp=sharing",
+      url: "https://drive.google.com/file/d/1tYJFaCwhTP6LxGUBMyUOLW_hOoU1jzJR/view?usp=sharing",
       icon: "🖼️",
       description: "Event brief and schedule",
     },
