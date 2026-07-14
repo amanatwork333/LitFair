@@ -71,7 +71,7 @@ export const siteConfig: SiteConfig = {
     {
       id: "resources",
       title: "Posters",
-      url: "https://drive.google.com/file/d/1d8oshJYRNz5K9TaJVb1J9Jr9AFbil0ip/view?usp=sharing",
+      url: "https://drive.google.com/file/d/1rlKUL4KS3fLK44X1cBho6Q0KXGtuoEEW/view?usp=sharing",
       icon: "📚",
       description: "download posters",
     },
