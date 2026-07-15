@@ -51,7 +51,7 @@ export const siteConfig: SiteConfig = {
       title: "📝 Register Now",
       url: "https://forms.fillout.com/t/5hjQDotDxNus",
       icon: "📱",
-      description: "Lit Fair 2.0 Event registration",
+      description: "Lit Fair 2.0 Event Registration",
       isHighlighted: true,
     },
     {
